@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff5f5;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  background-color: #8b0000;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  margin: 0;
+}
+
+#creditos-aprobados {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #8b0000;
+  color: white;
+  padding: 1rem;
+  font-weight: bold;
+  z-index: 999;
+  border-bottom-left-radius: 10px;
+}
+
+.semestre {
+  margin: 1rem 2rem 3rem 2rem;
+  border: 2px solid #8b0000;
+  border-radius: 10px;
+  background-color: #fff0f0;
+  padding: 1rem;
+}
+
+.semestre h2 {
+  margin-top: 0;
+  color: #8b0000;
+  border-bottom: 2px solid #8b0000;
+  padding-bottom: 0.5rem;
+}
+
+.gridRamos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1rem;
+}
+
+.ramo {
+  border: 2px solid #8b0000;
+  background-color: #ffe5e5;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.ramo:hover {
+  transform: scale(1.02);
+}
+
+.ramo button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #8b0000;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.ramo button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
